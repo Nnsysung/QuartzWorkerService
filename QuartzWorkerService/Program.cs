@@ -26,7 +26,7 @@ namespace QuartzWorkerService
                         // Use a Scoped container to create jobs. I'll touch on this later
                         q.UseMicrosoftDependencyInjectionScopedJobFactory();
                         // Create a "key" for the job
-                        var jobKey = new JobKey("This is the job");
+                        var jobKey = new JobKey("This is the Job Key");
 
                         // Register the job with the DI container
                         q.AddJob<Quartzz>(opts => opts.WithIdentity(jobKey));
