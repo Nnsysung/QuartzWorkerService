@@ -36,7 +36,7 @@ namespace QuartzWorkerService
                         //    .WithIdentity("My Job Trigger-trigger") // give the trigger a unique name
                         //    .WithCronSchedule("5 * * * * ?")); // run every 5 seconds
                         // Register the job, loading the schedule from configuration
-                    q.AddJobAndTrigger<Quartzz>(hostContext.Configuration);
+                    q.AddJobAndTrigger<HelloWorldJob>(hostContext.Configuration);
 
                     });
 

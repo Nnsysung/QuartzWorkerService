@@ -11,10 +11,10 @@ using System.Threading;
 namespace QuartzWorkerService.Controller
 {
     [DisallowConcurrentExecution]
-    public class Quartzz: BackgroundService,IJob
+    public class HelloWorldJob : BackgroundService,IJob
     {
-        private readonly ILogger<Quartzz> _logger;
-        public Quartzz(ILogger<Quartzz> logger)
+        private readonly ILogger<HelloWorldJob> _logger;
+        public HelloWorldJob(ILogger<HelloWorldJob> logger)
         {
             _logger = logger;
         }
